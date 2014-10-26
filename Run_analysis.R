@@ -1,6 +1,6 @@
-# assuming all files were read into the tables of the same names
+# assuming all files were read into the tables of the same names: X_Train,X_Test, y_Train,y_Test,subject_train,subject_test, features,activity_labels
 
-# combine Train and Test
+# combine Train and Tes
 
 train_test_X <- rbind(X_Train,X_Test)
 train_test_Y <- rbind(y_Train,y_Test)
