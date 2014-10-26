@@ -50,8 +50,9 @@ final_data1 <- final_data[-(1:2)]
 
 # assigning activity labels instead of 1,2,3,4,5,6
 
-final_data2 <- merge(final_data1, activity_labels, by.x = "activity", by.y = "V1")
+final_data2 <- merge(activity_labels, final_data1, by.x = "V1", by.y = "activity")
 
 # changing the last variable's name
 
 names(final_data2)[names(final_data2) == "V2"] <- "activity"
+
