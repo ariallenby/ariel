@@ -56,3 +56,4 @@ final_data2 <- merge(activity_labels, final_data1, by.x = "V1", by.y = "activity
 
 names(final_data2)[names(final_data2) == "V2"] <- "activity"
 
+write.table(final_data2, "C:/Users/user/Documents/2014/Coursera/DataR/Final_data.txt", row.name=FALSE, col.name=TRUE, sep = "\t")
